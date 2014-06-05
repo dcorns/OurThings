@@ -1,0 +1,1 @@
+﻿$.post('\DRCCompany\OpenCompany', function (data) { });

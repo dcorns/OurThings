@@ -1,0 +1,977 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+@media all
+{
+    
+}
+@media screen
+{
+    
+body
+{
+    background-color: #5c87b2;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #505abc;
+}
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active
+{
+    color: #12eb87;
+}
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2
+{
+    padding: 0 0 10px 0;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+#header h1
+{
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px !important;
+}
+
+#main
+{
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+}
+
+#footer
+{
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    font-size: .9em;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+}
+
+ul#menu li a:hover
+{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset 
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    width: 200px;
+    border: 1px solid #CCC;
+}
+
+/*
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;   
+  border: solid 1px #e8eef4;
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;
+  background-color: #e8eef4; 
+  border: solid 1px #e8eef4;   
+}
+*/
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color:Red;
+}
+
+#menucontainer
+{
+    margin-top:40px;
+}
+
+div#title
+{
+    display:block;
+    float:left;
+    text-align:left;
+}
+
+#logindisplay
+{
+    font-size:1.1em;
+    display:block;
+    text-align:right;
+    margin:10px;
+    color:White;
+}
+
+#logindisplay a:link
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label,
+.display-field,
+.editor-field
+{
+    margin: 0.5em 0;
+}
+
+.text-box
+{
+    width: 30em;
+}
+
+.text-box.multi-line
+{
+    height: 6.5em;
+}
+
+.tri-state
+{
+    width: 6em;
+}
+/* My Styles
+__________________________________________________*/
+
+.tablerowselected
+{
+    color:Aqua;
+    background-color:Blue;
+    border-color:White;
+}
+
+#TopDiv
+{
+    background-color:#8999A9;
+    color:Black;
+}
+#ActDiv
+{
+    float:left;
+    width:80%;
+    background-color:#657484;
+    color:Black;
+}
+#BTNSDIV
+{
+    background-color:Fuchsia;
+    position:fixed;
+    left:325px;
+    
+}
+.MainButtons
+{
+    color:Aqua;
+    background-color:Green;
+    width:auto;
+    overflow:visible;
+    display:block;
+    
+}
+.PageButton
+{
+    color:Green;
+    background-color:Black;
+    
+    
+}
+#TDIV
+{
+    position:fixed;
+    left:325px;
+    top:175px;
+    
+    max-width:300px; 
+    
+}
+
+#BottomDiv
+{
+    background-color:#445577;
+    
+    color:White;
+}
+
+.newtblrecord
+{
+    color:Green;
+    max-width:300px;
+}
+#tblItems
+{
+    position:fixed;
+    left:325px;
+    top:175px;
+    
+    max-width:300px;
+}
+
+.titlelabel
+{
+    color:Silver;
+    font-size:20px;
+}
+.mobilebtn
+{
+    font-size:50px;
+}
+
+.ledgbtn
+{
+    font-size:10px;
+    background-color:#00FFAF;
+}
+#legetable
+{
+    float:right;
+    width:79%;
+    background-color:#0F0FAF;
+}
+#legetable th
+{
+    background-color:#00AFFF;
+    color:Black;
+}
+#legetable tr
+{
+    
+}
+#legetable td
+{
+    width:auto;
+    color:#FFAFFF;
+    border-color:#000000;
+    border-bottom-style:groove;
+}
+
+.Mobile
+{
+    font-size:100px;
+    border-color:Black;
+    border-style:double;
+    color:Black;
+}
+.SpecialButton
+{
+    background-color:Green;
+    border-color:Lime;
+    color:Yellow;
+    border-style:outset;
+    border-radius:3em;
+    
+}
+.SpecialButton:hover
+{
+    border-color:transparent;
+    background-color:Lime;
+    color:AliceBlue;
+}
+.QuanClass
+{
+    width:25px;
+   
+    
+}
+#DocPath
+{
+    
+    background-color:transparent;
+    width:700px;
+    
+}
+.purchasetblclass
+{
+    color:Maroon;
+    font-size:20px;
+}
+.purchasecellclass
+{
+    color:Maroon;
+}
+.purchaserowclass
+{
+    color:Maroon;
+}
+#DivQuickAdd
+{
+    position:fixed;
+    color:GreenYellow;
+    background-color:#120012;
+    left:900px;
+    top:100px;
+}
+#ledgetblcaption
+{
+    text-align:left;
+    font-size:22px;
+    font-weight:bold;
+    color:Black;
+}
+.outclass
+{
+    text-align:left;
+    font-size:22px;
+    font-weight:bold;
+    color:Black;
+}
+.cblistclass
+{
+   
+}
+.cblistclass:hover
+{
+    
+}
+
+.tablesection
+{
+    font-size:22px;
+    color:Black;
+    text-align:left;
+}
+.SelTblCaption
+{
+    font-size:20px;
+}
+#PitemDiv
+{
+    
+}
+#tblSale
+{
+    background-color:#336688;
+    color:Black;
+}
+:invalid
+{
+    background-color:Crimson;
+}
+
+/*New Sale*/
+.NewSaleData
+{
+   
+}
+.NewSaleLabel
+{
+    margin-left:10%;
+}
+#ddlCust
+{
+    float:right;
+}
+#tbCust
+{
+    float:right;
+}
+#PayMeth
+{
+    margin-left:10%;
+}
+#SDate
+{
+    margin-left:5%;
+}
+#SAMT
+{
+    
+    background-color:PaleGoldenrod;
+}
+#TotalExemptSale
+{
+    margin-left:8%;
+}
+#TotalTaxableSale
+{
+    margin-left:3%;
+}
+#SaleTotal
+{
+    margin-left:3%;
+}
+/*Purchase*/
+
+#lblReference
+{
+    margin-left:5%;
+}
+#lblDocPath
+{
+    
+}
+#lblPayMeth
+{
+    margin-left:5%;
+}
+#PRef
+{
+    margin-left:10%;
+}
+#PaymentMethod
+{
+    margin-left:5%
+}
+#PDocPath
+{
+    
+    background-color:transparent;
+    width:700px;
+}
+#ddlPurchAcctList
+{
+    float:left;
+}
+#ddlVenderList
+{
+    float:left;
+}
+#lblPAMT
+{
+    margin-left:5%;
+}
+
+#PQ
+{
+    width:40px;
+    text-align:right;
+   
+}
+#PAMT
+{
+    margin-left:5%;
+}
+#lblShipExpense
+{
+    margin-left:5%;
+}
+#lblShipCOG
+{
+    margin-left:12%;
+}
+#ShipExpense
+{
+    
+    margin-left:2%;
+}
+#ShipCOG
+{
+   margin-left:2%;
+    
+}
+/*#lblTotalExemptPurchase
+{
+    margin-left:14%;
+}
+#lblTotalTaxablePurchase
+{
+    margin-left:2%;
+}
+#lblPTax
+{
+    margin-left:2%;
+}
+#lblPurchaseTotal
+{
+    margin-left:2%;
+}
+#TotalExemptPurchase
+{
+    margin-left:2%;
+    font-size:20px;
+}
+#TotalTaxablePurchase
+{
+    margin-left:10%;
+    font-size:20px;
+}
+#PTax
+{
+    margin-left:10%;
+    font-size:20px;
+}
+#PurchaseTotal
+{
+    margin-left:5%;
+    font-size:25px;
+}
+#Tax
+{
+    margin-left:3%;
+}
+
+#lblTax
+{
+    margin-left:15%;
+}
+#lblTotal
+{
+    margin-left:18%;
+}*/
+#ddlTaxRateList
+{
+    float:left;
+}
+#tbTaxRateList
+{
+    float:left;
+}
+#lblTaxRateList
+{
+    
+}
+/*Both Sale and Purchase*/
+.PTotals
+{
+    background-color:transparent;
+    border-style:none;
+    font-size:20px;
+}
+.lblPTotals
+{
+    color:#336645;
+    font-size:18px;
+}
+#ddlItemList
+{
+    float:left;
+}
+#btnAddItem
+{
+    background-color:green;
+}
+#btnNewItem
+{
+    background-color:Yellow;
+}
+#TotalsDiv
+{
+    /*border-width:2px;
+    border-color:#332255;
+    border-style:groove;*/
+    float:left;
+    height:200px;
+    width:20%;
+}
+ #ActDiv
+ {
+     float:right;
+     width:80%;
+ }
+ #BottomDiv
+ {
+     float:right;
+ }
+ #AcctSelDiv
+ {
+     background-color:Blue;
+     color:Navy;
+     font-size:large;
+ }
+ #MainDiv
+ {
+     float:right;
+ }
+ 
+ /*Invoice*/
+ #divLogo
+ {
+     padding-left:30px;
+ }
+ #headerone
+ {
+     top:1%;
+     font-size:25px;
+     right:5%;
+     color:AntiqueWhite;
+     position:absolute;
+ }
+ #headerone label
+ {
+    position:relative;
+    display:block;
+ }
+.coinfo
+ {
+     font-size: 15px;
+    color:Aqua;
+    padding-right:5px;
+ }
+ #divCustInfo
+ {
+     font-size:20px;
+     color:Bisque;
+     top:25%;
+     right:5%;
+     position:absolute;
+ }
+ #divCustInfo label
+ {
+     display:block;
+ }
+ #divLineItems
+ {
+     color:Black;
+     right:20%;
+     
+     top:40%;
+     font-size:15px;
+     position:absolute;
+ } 
+ #ItemTable
+ {
+     display:table;
+ } 
+ #ItemTable th
+ {
+     color:Black;
+     padding-left:30px;
+ } 
+ 
+ #ItemTable td
+ {
+     
+     padding-left:30px;
+ } 
+ #divTotals
+ {
+     border-style:inset;
+     border-color:Gray;
+     color:Black;
+     position:absolute;
+     bottom:1%;
+     right:5%;
+     font-size:15px;
+     
+ }
+ #divTotals label
+ {
+     display:block;
+ }
+ #divFooter
+ {
+     position:absolute;
+     bottom:5%;
+ }
+ }
+ @media print
+ {
+     #btnprint
+     {
+         display:none;
+     }
+     #btnemail
+     {
+         display:none;
+     }
+     .page-break
+     {
+         display:block;
+         page-break-before:auto;
+     }
+    #headerone
+ {
+     
+     font-size:25px;
+     padding-right:30px;
+     
+     
+ }
+  
+ #headerone label
+ {
+     
+     
+     
+     
+ }
+ .coinfo
+ {
+     font-size: 15px;
+    color:Aqua;
+    padding-right:5px;
+ }
+.InvCoInfo
+{
+    padding-top:10px;
+    width:49%;
+    height:85px;
+    float:left;
+    border-style:double;
+    text-align:center;
+}
+.InvCoInfo label
+{
+    color:Navy;
+    display:block;
+    font-size:small;
+}
+.InvCustInfo
+{
+    padding-top:10px;
+     width:49%;
+     height:85px;
+    border-style:double;
+    float:right;
+    text-align:center;
+    font-size:large;
+}
+.InvCustInfo label
+{
+    display:block;
+    
+    
+}
+.Invheaderone
+{
+    float:right;
+}
+
+.Invheaderone label
+{
+    display:block;
+}
+
+.InvLineItems table
+{
+    width:100%;
+    text-align:center;
+}
+
+.InvJobLogRow
+{
+    color:Olive;
+    text-align:left;
+}
+
+.InvTotals
+{
+    float:right;
+}
+.InvTotals label
+{
+    display:block;
+}
+.InvJobLogTimeRow
+{
+    color:Green;
+}
+
+ }

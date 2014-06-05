@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8C91C6D-6AB3-478D-9028-46FBFCED4906}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OurThings</RootNamespace>
+    <AssemblyName>OurThings</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Small DRCdisk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizeData.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthorizeData.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AccountDetails.cs" />
+    <Compile Include="Classes\AcctAMTs.cs" />
+    <Compile Include="Classes\CogsInvAmount.cs" />
+    <Compile Include="Classes\DepLine.cs" />
+    <Compile Include="Classes\DepositItem.cs" />
+    <Compile Include="Classes\GenLedgeLine.cs" />
+    <Compile Include="Classes\InvoiceDetail.cs" />
+    <Compile Include="Classes\ItemAccountAmounts.cs" />
+    <Compile Include="Classes\ItemAllocation.cs" />
+    <Compile Include="Classes\ITEMDATA.cs" />
+    <Compile Include="Classes\ItemInvCogsAccts.cs" />
+    <Compile Include="Classes\LineItem.cs" />
+    <Compile Include="Classes\OptionList.cs" />
+    <Compile Include="Classes\PaymentDetail.cs" />
+    <Compile Include="Classes\Prepaid.cs" />
+    <Compile Include="Classes\SNObject.cs" />
+    <Compile Include="Classes\SOFTDATA.cs" />
+    <Compile Include="Classes\TableRecord.cs" />
+    <Compile Include="Classes\TransDocument.cs" />
+    <Compile Include="Classes\TransRecord.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountingController.cs" />
+    <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JobsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Classes\BOOKDATA.cs" />
+    <Compile Include="Models\MyJava.cs" />
+    <Compile Include="Classes\MyMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TheData.cs">
+      <DependentUpon>TheData.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="TheData.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TheData.dbml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CFResources\backbone.js" />
+    <Content Include="CFResources\CFChallenge.js" />
+    <Content Include="CFResources\ember.js" />
+    <Content Include="CFResources\handlebars-v1.2.1.js" />
+    <Content Include="CFResources\jquery-1.11.0.js" />
+    <Content Include="CFResources\json2.js" />
+    <Content Include="CFResources\spine.js" />
+    <Content Include="CFResources\underscore.js" />
+    <Content Include="Content\Images\AccountInfoEditBackground.png" />
+    <Content Include="Content\Images\AccountInfoViewBackground.png" />
+    <Content Include="Content\Images\AccountMaintanancebtn.jpg" />
+    <Content Include="Content\Images\AccountTransferbtn.jpg" />
+    <Content Include="Content\Images\addbtn.gif" />
+    <Content Include="Content\Images\AddItemSourcebtn.jpg" />
+    <Content Include="Content\Images\AddLaborbtn.jpg" />
+    <Content Include="Content\Images\Backbtn.jpg" />
+    <Content Include="Content\Images\Background1.jpg" />
+    <Content Include="Content\Images\Banktransferbtn.jpg" />
+    <Content Include="Content\Images\Blankbtn.jpg" />
+    <Content Include="Content\Images\Blankbtn.png" />
+    <Content Include="Content\Images\BlankbtnMouseOver.jpg" />
+    <Content Include="Content\Images\BlankbtnMouseOver.png" />
+    <Content Include="Content\Images\BlankbtnSelected.jpg" />
+    <Content Include="Content\Images\BlankbtnSelected.png" />
+    <Content Include="Content\Images\Calendarbtn.jpg" />
+    <Content Include="Content\Images\Cancelbtn.jpg" />
+    <Content Include="Content\Images\ChargeBtn.jpg" />
+    <Content Include="Content\Images\ClientSitePageTop copy.png" />
+    <Content Include="Content\Images\Contactsbtn.jpg" />
+    <Content Include="Content\Images\Contactsbtn2.jpg" />
+    <Content Include="Content\Images\CustomerBtn.jpg" />
+    <Content Include="Content\Images\Deletebtn.jpg" />
+    <Content Include="Content\Images\Depositbtn.jpg" />
+    <Content Include="Content\Images\DepositReceiptbtn.jpg" />
+    <Content Include="Content\Images\Dialogbtn.jpg" />
+    <Content Include="Content\Images\DialogClickedbtn.jpg" />
+    <Content Include="Content\Images\dlBackGround.gif" />
+    <Content Include="Content\Images\DRC AcctBackGround.png" />
+    <Content Include="Content\Images\DRC Watermark.png" />
+    <Content Include="Content\Images\DRCdisk.png" />
+    <Content Include="Content\Images\DRCdisk2.png" />
+    <Content Include="Content\Images\DRCSMHeaderBackImg.png" />
+    <Content Include="Content\Images\Editbtn.jpg" />
+    <Content Include="Content\Images\EditTransactionbtn.jpg" />
+    <Content Include="Content\Images\Emailbtn.jpg" />
+    <Content Include="Content\Images\Exitbtn.jpg" />
+    <Content Include="Content\Images\expensebtn.jpg" />
+    <Content Include="Content\Images\ExpenseReportsBtn.jpg" />
+    <Content Include="Content\Images\Grid800x600.png" />
+    <Content Include="Content\Images\helpbtn.jpg" />
+    <Content Include="Content\Images\imEnterServiceType.png" />
+    <Content Include="Content\Images\imExpert.png" />
+    <Content Include="Content\Images\Infrastucturebtn.jpg" />
+    <Content Include="Content\Images\Invalidatebtn.jpg" />
+    <Content Include="Content\Images\InventoryEditsBackground200x600.png" />
+    <Content Include="Content\Images\Invoicebtn.jpg" />
+    <Content Include="Content\Images\InvoiceLogo.jpg" />
+    <Content Include="Content\Images\JobLogEntryBackground.png" />
+    <Content Include="Content\Images\lbCheckBoxt.png" />
+    <Content Include="Content\Images\Logo3WithADRnPHNt.png" />
+    <Content Include="Content\Images\Logo3WithText.png" />
+    <Content Include="Content\Images\MoneyMeter.png" />
+    <Content Include="Content\Images\MoneyMeter0.png" />
+    <Content Include="Content\Images\MoneyMeter1.png" />
+    <Content Include="Content\Images\MoneyMeter2.png" />
+    <Content Include="Content\Images\MoneyMeter3.png" />
+    <Content Include="Content\Images\MoneyMeter4.png" />
+    <Content Include="Content\Images\MoneyMeter5.png" />
+    <Content Include="Content\Images\MoneyMeter6.png" />
+    <Content Include="Content\Images\MoneyMeter7.png" />
+    <Content Include="Content\Images\MoneyMeter8.png" />
+    <Content Include="Content\Images\MoneyMeter9.png" />
+    <Content Include="Content\Images\MoneyMeterAllZeros.png" />
+    <Content Include="Content\Images\MoneyMeterbar.png" />
+    <Content Include="Content\Images\MoneyMeterblank.png" />
+    <Content Include="Content\Images\MoneyMeterWorkspace.png" />
+    <Content Include="Content\Images\New2007LogoITKSplashtwo.jpg" />
+    <Content Include="Content\Images\Newbtn.jpg" />
+    <Content Include="Content\Images\NewPartbtn.jpg" />
+    <Content Include="Content\Images\Nextbtn.jpg" />
+    <Content Include="Content\Images\payfrom.gif" />
+    <Content Include="Content\Images\Payrollbtn.jpg" />
+    <Content Include="Content\Images\PeniltyFinebtn.jpg" />
+    <Content Include="Content\Images\Postbtn.gif" />
+    <Content Include="Content\Images\Printbtn.jpg" />
+    <Content Include="Content\Images\printfriendlybtn.jpg" />
+    <Content Include="Content\Images\PrintingLogo.png" />
+    <Content Include="Content\Images\Purchasebtn.jpg" />
+    <Content Include="Content\Images\QuoteRequestbtn.jpg" />
+    <Content Include="Content\Images\Quotesbtn.jpg" />
+    <Content Include="Content\Images\ReceivePaymentbtn.jpg" />
+    <Content Include="Content\Images\Recievebtn.jpg" />
+    <Content Include="Content\Images\Refreshbtn.jpg" />
+    <Content Include="Content\Images\ReportEmployeebtn.jpg" />
+    <Content Include="Content\Images\Reportsbtn.jpg" />
+    <Content Include="Content\Images\Savebtn.jpg" />
+    <Content Include="Content\Images\Searchbtn.jpg" />
+    <Content Include="Content\Images\SelectCheck.jpg" />
+    <Content Include="Content\Images\SendPurchaseOrderbtn.jpg" />
+    <Content Include="Content\Images\taxlookupbtn.jpg" />
+    <Content Include="Content\Images\TaxUpdatebtn.jpg" />
+    <Content Include="Content\Images\TextBkDrop.png" />
+    <Content Include="Content\Images\TransactionMaintanacebtn.jpg" />
+    <Content Include="Content\Images\Unofficial.png" />
+    <Content Include="Content\Images\VendorProductsbtn.jpg" />
+    <Content Include="Content\Images\Viewbtn.gif" />
+    <Content Include="Content\themes\base\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\smoothness\jquery-ui-1.8.1.custom.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.all.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.base.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.button.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.core.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.slider.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\smoothness\jquery.ui.theme.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\DRCCS.js" />
+    <Content Include="Scripts\DRCJScript1.js" />
+    <Content Include="Scripts\jquery-1.4.2.js" />
+    <Content Include="Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.1.custom.min.js" />
+    <Content Include="Small DRCdisk.ico" />
+    <Content Include="Views\Accounting\Contact.aspx" />
+    <Content Include="Views\Accounting\Document.aspx" />
+    <Content Include="Views\Accounting\Index.aspx" />
+    <Content Include="Views\Accounting\Invoice.aspx" />
+    <Content Include="Views\Accounting\Receipt.aspx" />
+    <Content Include="Views\Accounting\SCDeduction.aspx" />
+    <Content Include="Views\Accounting\SCStatement.aspx" />
+    <Content Include="Views\Home\Audio.aspx" />
+    <Content Include="Views\Home\Authors.aspx" />
+    <Content Include="Views\Home\Books.aspx" />
+    <Content Include="Views\Home\Items.aspx" />
+    <Content Include="Views\Home\Keys.aspx" />
+    <Content Include="Views\Home\Locations.aspx" />
+    <Content Include="Views\Home\Owners.aspx" />
+    <Content Include="Views\Home\Publishers.aspx" />
+    <Content Include="Views\Home\Software.aspx" />
+    <Content Include="Views\Home\Video.aspx" />
+    <Content Include="Views\Jobs\Index.aspx" />
+    <Content Include="Views\Jobs\OneJob.aspx" />
+    <Content Include="Views\Shared\CFChallenge.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AuthorizeData.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AuthorizeData.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TheData.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TheData.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TheData.dbml.layout">
+      <DependentUpon>TheData.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AuthorizeData.dbml.layout">
+      <DependentUpon>AuthorizeData.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60966</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60966/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
